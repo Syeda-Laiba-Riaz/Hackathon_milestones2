@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume</title>
+    <title>Dynamic Resume Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>laiba</h1>
-            <p>Full Stack Developer</p>
-        </header>
-        <section class="contact-info">
-            <p>Email: laiba@yahoo.com</p>
-            <p>Phone: 0123456789</p>
-            <p>Website: www.laiba.com</p>
-        </section>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Experienced web developer skilled in HTML, CSS, JavaScript, and React. Passionate about building responsive and dynamic web applications.</p>
-        </section>
-        <section class="experience">
-            <h2>Experience</h2>
-            <div>
-                <h3>Senior Developer - Tech Company</h3>
-                <p>2021 - Present</p>
-                <p>Developed scalable web applications and enhanced user experience through optimized UI/UX.</p>
-            </div>
-            <div>
-                <h3>Web Developer - ABC Solutions</h3>
-                <p>2018 - 2021</p>
-                <p>Worked on various front-end and back-end projects, improving performance and security.</p>
-            </div>
-        </section>
-        <section class="education">
-            <h2>Education</h2>
-            <div>
-                <h3>Bachelor's in Computer Science</h3>
-                <p>XYZ University, 2014 - 2018</p>
-            </div>
-        </section>
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript & React</li>
-                <li>Node.js & Express</li>
-                <li>Responsive Design</li>
-            </ul>
-        </section>
+        <h1>Resume Builder</h1>
+        
+        <form id="resume-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="title">Job Title:</label>
+            <input type="text" id="title" placeholder="e.g. Full Stack Developer" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" placeholder="Enter your website">
+
+            <label for="about">About Me:</label>
+            <textarea id="about" placeholder="Brief about yourself" required></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="List your work experience" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter your education details" required></textarea>
+
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="resume">
+            <!-- Resume will be generated here -->
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
